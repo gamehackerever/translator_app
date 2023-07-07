@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello</string>
+    <string name="translate_language">Translate language</string>
+    <string name="translated_language">Translated language</string>
+    <string name="enter_your_name_to_translate">Enter your name to translate</string>
+    <string name="translated_text_here">Translated Text Here</string>
+    <string name="english">English</string>
+    <string name="hindi">Hindi</string>
+    <string name="translate">Translate</string>
+    <string name="clear">Clear</string>
+    <string-array name="language_name">
+        <item>Hindi</item>
+        <item>Tamil</item>
+        <item>Kannada</item>
+    </string-array>
+
+    <string-array name="language_code">
+        <item>hn</item>
+        <item>ta</item>
+        <item>kn</item>
+    </string-array>
+</resources>

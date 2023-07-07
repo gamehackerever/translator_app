@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/main"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/english"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/apple_bold"
+        android:gravity="bottom"
+        android:paddingTop="5dp"
+        android:text="@string/translate"
+        android:textColor="@color/white"
+        android:textSize="55sp" />
+
+    <TextView
+        android:id="@+id/english"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/translate"
+        android:layout_alignBottom="@id/translate"
+        android:layout_marginBottom="162dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/apple"
+        android:text="@string/english"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/languages"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignStart="@id/translate"
+        android:layout_alignBottom="@id/translated"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginBottom="162dp"
+        android:dropDownWidth="220dp"
+        android:entries="@array/language_name"
+        android:fontFamily="@font/apple"
+        android:gravity="start"
+        android:spinnerMode="dropdown"
+        android:theme="@style/mySpinnerItemStyle" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="10dp"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/idBtnTranslateLanguage"
+        android:layout_width="363dp"
+        android:layout_height="77dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="110dp"
+        android:backgroundTint="@color/lightBlack"
+        android:fontFamily="@font/apple"
+        android:gravity="center"
+        android:text="@string/translate"
+        android:textColor="@color/okBlue"
+        app:cornerRadius="40dp"
+        android:textSize="30sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="10dp"
+        android:textAllCaps="false"
+        app:cornerRadius="40dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/clear"
+        android:layout_width="363dp"
+        android:layout_height="77dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/lightBlack"
+        android:fontFamily="@font/apple"
+        android:gravity="center"
+        android:text="@string/clear"
+        android:textColor="@color/okBlue"
+        android:textSize="30sp" />
+
+    <EditText
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="10dp"
+        android:padding="20sp"
+        android:id="@+id/translate"
+        android:layout_width="363dp"
+        android:layout_height="154dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@id/languages"
+        android:layout_marginBottom="50dp"
+        android:autofillHints="Click Here!"
+        android:background="@drawable/firsttext"
+        android:fontFamily="@font/apple"
+        android:gravity="start"
+        android:hint="@string/enter_your_name_to_translate"
+        android:inputType="textMultiLine"
+        android:textColor="@color/white"
+        android:textColorHint="@color/common_google_signin_btn_text_light"
+        android:textSize="35sp" />
+
+    <TextView
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="10dp"
+        android:padding="20sp"
+        android:scrollbarStyle="insideInset"
+        android:layout_alignBottom="@id/idBtnTranslateLanguage"
+        android:layout_marginBottom="110dp"
+        android:id="@+id/translated"
+        android:layout_width="363dp"
+        android:layout_height="154dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/secondtext"
+        android:fontFamily="@font/apple"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:textSize="35sp" />
+
+</RelativeLayout>

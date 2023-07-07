@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "262401737692",
+    "project_id": "learning-805f8",
+    "storage_bucket": "learning-805f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262401737692:android:9006ad95bf37cb38408519",
+        "android_client_info": {
+          "package_name": "com.sri.learning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262401737692-f314799184c0glfi855enq539ei0q531.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAof9UyE4R7Jjvir0avsnx6z59goaSlGH4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "262401737692-f314799184c0glfi855enq539ei0q531.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
